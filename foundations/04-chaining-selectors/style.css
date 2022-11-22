@@ -1,0 +1,13 @@
+ /* syle.css */
+
+.avatar.proportioned{
+    width: 300px;
+    height: auto ;
+}
+
+/*I had originally put in "max-content" and even thoug this created the desired result the correct answer was the "auto" tag. this is because while max will work it mayy have resulted in some issues in some browsers*/
+
+.avatar.distorted{
+    width: 200px;
+    height: 400px;
+}
