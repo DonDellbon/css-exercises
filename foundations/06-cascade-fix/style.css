@@ -8,6 +8,53 @@ body{
   font-weight: 800;
 }
 
+
+.para {
+  font-size: 22px;
+}
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#confirm-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+div .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+/*
+original unedited css that was returning undesierable results
+body{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
 .small-para {
   font-size: 14px;
   font-weight: 800;
@@ -40,3 +87,58 @@ div.text {
   font-size: 22px;
   font-weight: 100;
 }
+*/
+
+/*
+
+this is my original solution to the assignment. though i got the desired reults it was very janky and not ideal. after looking at the solutions provided i went back and copied/pasated in the orignal css file to review how the files where edited to better understand the solutions provided.
+
+body{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
+.para.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+changed from ".small-para" to ".para.small-para". doing this chained the class selectors togetheer selecting elements with both "para" & "small-para"
+.para {
+  font-size: 22px;
+}
+
+#confirm-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+chnaged from a class selector to an id selector to turn the button green
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+div {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+cnhaged to a generic element selector son noly the".child" css would affect the "text child" class
+.cancel {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}*/
